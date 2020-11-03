@@ -59,11 +59,11 @@ body {
 }
 
 .panel {
-    background-color: rgb(128,128,128, 0.7);
+    background-color: rgb(50,25,50, 0.9);
     border-radius: 10px;
-    padding: 15px 25px;
+    padding: 5px 10px;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -72,10 +72,74 @@ body {
 }
 
 .pricing-plan {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(130,140, 150, 1);
 }
 
 .pricing-plan:last-child {
     border-bottom: none;
+}
+
+.pricing-header {
+    color: #e5e5e5;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.pricing-features {
+    margin: 50px 0 25px;
+    color: #e5e5e5;
+}
+
+.pricing-items {
+    color: #e5e5e5;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px;
+    border-top: 1px solid rgb(130,140, 150, 1);
+    
+}
+.pricing-items:last-child {
+    border-bottom: 1px solid rgb(130,140, 150, 1);
+
+}
+
+.pricing-price {
+    color: #e5e5e5;
+    display: block;
+    font-weight: 900;
+}
+
+.pricing-button {
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 35px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out
+}
+
+.pricing-button:hover, .pricing-button:focus {
+    background-color: rgb(233,150,122);
+}
+
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+        margin-right: 37px;
+    }
+    
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid rgb(130,140, 150, 1);
+        padding: 25px 50px;
+    }
+
+    .pricing-plan:last-child {
+        border-right: none;
+    }
 }
 
